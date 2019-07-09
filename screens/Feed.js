@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { StatusBar } from 'react-native';
 import styled from "styled-components";
 import { SafeAreaView } from "react-navigation";
 
@@ -9,7 +10,7 @@ import Location from "../components/Location";
 // mockup data
 import { data } from "../MockData";
 
-const Feed = () => {
+const Feed = (props) => {
   const getData = () => {
     return data.map(({ id, title, company, city, imageURI }) => (
       <Card
@@ -38,6 +39,7 @@ const Feed = () => {
 
 const StyledView = styled.ScrollView`
   flex: 1;
+  background-color: whitesmoke;
 `;
 
 const StyledText = styled.Text`

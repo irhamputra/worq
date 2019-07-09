@@ -15,7 +15,12 @@ const FeedStack = createStackNavigator({
       headerRight: <IconHeaderRight />
     }
   },
-  Detail,
+  Detail: {
+    screen: Detail,
+    navigationOptions: {
+      header: null
+    }
+  },
   SearchLocation,
   Notification: {
     screen: Notification

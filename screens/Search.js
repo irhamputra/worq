@@ -6,7 +6,6 @@ class Search extends Component {
     return (
       <StyledView>
         <StyledText>Search Screen </StyledText>
-        <StyledButton title="Next page" onPress={() => this.props.navigation.navigate('Detail')}/>
       </StyledView>
     );
   }

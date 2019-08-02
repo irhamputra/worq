@@ -22,7 +22,7 @@ class LogoTitle extends React.Component {
               fontFamily: "cocogoose"
             }}
           >
-            worq
+            Charimate
           </StyledLogoTitle>
         )}
       </React.Fragment>
